@@ -41,7 +41,7 @@ with st.form("test_data_form", clear_on_submit=True):
         st.session_state.test_data.append(key_values_dict)
 
 # --- Show test data with delete buttons ---
-st.subheader("Test Data")
+st.subheader("Test Steps")
 for idx, data_set in enumerate(st.session_state.test_data):
     cols = st.columns([4, 1])
     cols[0].json(data_set)
